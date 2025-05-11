@@ -32,6 +32,7 @@ if hesapla:
             st.session_state.show_results = True
 
 if st.session_state.show_results and st.session_state.sonuc:
+    tabs = st.tabs(["🗺️ Rota Haritası", "📊 Parametre Dağılımı", "📈 İstatistikler", "🎞️ Animasyonlu Harita", "📁 Senaryo Kaydet", "🕒 Gantt Şeması", "📊 Karşılaştırma"])
     route, total_time, total_fuel, total_co2, total_risk, log = st.session_state.sonuc
 
     tabs = st.tabs(["🗺️ Rota Haritası", "📊 Parametre Dağılımı", "📈 İstatistikler", "🎞️ Animasyonlu Harita", "📁 Senaryo Kaydet", "🕒 Gantt Şeması", "📊 Karşılaştırma"])
